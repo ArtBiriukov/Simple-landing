@@ -1,0 +1,69 @@
+@import 'rav';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: Larsseit; /* Имя шрифта */
+  src: url(fonts/Larsseit.otf); /* Путь к файлу со шрифтом */
+}
+header{
+  background-color: $title__color;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.container{
+  width: 1130px;
+  margin: 0 auto;
+}
+.logo {
+  font-family: $mainFont;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  text-decoration: none;
+  color: #62D0DF;
+}
+.top__menu{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 27px;
+}
+.nav{
+  display: flex;
+  list-style-type: none;
+  padding-top: 10px;
+  .nav__link{
+    margin-right: 28px;
+    color: $text__color;
+    font-family: $mainFont;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover{
+      // text-decoration: underline;
+      padding-bottom: 1px;
+      border-bottom: 1px solid $text__color;
+    }
+  }
+}
+.top__btn{
+  font-family: $mainFont;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 30px;
+  background-color: #62D0DF;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  &:hover{
+    background-color: #F9B640;
+  }
+}
+
