@@ -8,6 +8,9 @@
   font-family: Larsseit; /* Имя шрифта */
   src: url(fonts/Larsseit.otf); /* Путь к файлу со шрифтом */
 }
+body{
+  font-family: $mainFont;
+}
 header{
   background-color: $title__color;
   background-repeat: no-repeat;
@@ -65,5 +68,11 @@ header{
   &:hover{
     background-color: #F9B640;
   }
+}
+.wrapper {
+  display: flex;
+}
+.offer{
+  width: 480px;
 }
 
