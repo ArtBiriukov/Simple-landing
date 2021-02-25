@@ -1,4 +1,4 @@
-@import 'rav';
+@import '__rav';
 
 * {
   margin: 0;
@@ -12,9 +12,10 @@ body{
   font-family: $mainFont;
 }
 header{
+  background-image: url(img/bg__offer__img.png);
   background-color: $title__color;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 12%;
 }
 .container{
   width: 1130px;
@@ -71,8 +72,47 @@ header{
 }
 .wrapper {
   display: flex;
+  justify-content: space-between;
+  padding-bottom: 75px;
 }
 .offer{
   width: 480px;
+  & .title{
+    padding-top: 250px;
+    color: $text__color;
+    font-size: 48px;
+    line-height: 53px;
+    font-weight: 900;
+    letter-spacing: -0.035em;
+  }
+  & .text {
+    color: $text__color;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 42px;
+    padding: 85px 0 63px 0;
+  }
+  & .btn{
+    color: $white;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    background-color: #F9B640;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    &:hover{
+      background-color: #62D0DF;
+    }
+  }
+}
+
+
+
+
+.logo__img{
+  width: 40%;
+  height: 40%;
 }
 

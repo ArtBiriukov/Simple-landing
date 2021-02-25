@@ -11,10 +11,15 @@
   /* Путь к файлу со шрифтом */
 }
 
+body {
+  font-family: Larsseit;
+}
+
 header {
+  background-image: url(img/bg__offer__img.png);
   background-color: #F4F9E2;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 12%;
 }
 
 .container {
@@ -84,5 +89,58 @@ header {
 
 .top__btn:hover {
   background-color: #F9B640;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 75px;
+}
+
+.offer {
+  width: 480px;
+}
+
+.offer .title {
+  padding-top: 250px;
+  color: #22356F;
+  font-size: 48px;
+  line-height: 53px;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+}
+
+.offer .text {
+  color: #22356F;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 42px;
+  padding: 85px 0 63px 0;
+}
+
+.offer .btn {
+  color: #fff;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  background-color: #F9B640;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.offer .btn:hover {
+  background-color: #62D0DF;
+}
+
+.logo__img {
+  width: 40%;
+  height: 40%;
 }
 /*# sourceMappingURL=style.css.map */
