@@ -16,10 +16,10 @@ body {
 }
 
 header {
-  background-image: url(img/bg__offer__img.png);
-  background-color: #F4F9E2;
-  background-repeat: no-repeat;
-  background-size: 12%;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, color-stop(70%, #F4F9E2), color-stop(30%, white));
+  background: linear-gradient(to right, #F4F9E2 70%, white 30%);
+  background-size: cover;
 }
 
 .container {
@@ -85,6 +85,7 @@ header {
   border-radius: 50px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  z-index: 2;
 }
 
 .top__btn:hover {
@@ -140,7 +141,9 @@ header {
 }
 
 .logo__img {
-  width: 40%;
-  height: 40%;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */
