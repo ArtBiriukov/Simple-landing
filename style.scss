@@ -1,4 +1,4 @@
-@import '__rav';
+@import 'scss/_rav';
 
 * {
   margin: 0;
@@ -10,108 +10,19 @@
 }
 body{
   font-family: $mainFont;
-}
-header{
-  position: relative;
-  background: linear-gradient(to right, $title__color 70%, white 30%);
-  background-size: cover;
-}
-.container{
-  width: 1130px;
-  margin: 0 auto;
-}
-.logo {
-  font-family: $mainFont;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 27px;
-  text-decoration: none;
-  color: #62D0DF;
-}
-.top__menu{
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding-top: 27px;
-}
-.nav{
-  display: flex;
-  list-style-type: none;
-  padding-top: 10px;
-  .nav__link{
-    margin-right: 28px;
-    color: $text__color;
-    font-family: $mainFont;
-    font-size: 14px;
-    line-height: 16px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    &:hover{
-      // text-decoration: underline;
-      padding-bottom: 1px;
-      border-bottom: 1px solid $text__color;
-    }
-  }
-}
-.top__btn{
-  font-family: $mainFont;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 16px;
-  color: $white;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 20px 30px;
-  background-color: #62D0DF;
-  border-radius: 50px;
-  transition: all 0.5s ease;
-  z-index: 2;
-  &:hover{
-    background-color: #F9B640;
-  }
-}
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 75px;
-}
-.offer{
-  width: 480px;
-  & .title{
-    padding-top: 250px;
-    color: $text__color;
-    font-size: 48px;
-    line-height: 53px;
-    font-weight: 900;
-    letter-spacing: -0.035em;
-  }
-  & .text {
-    color: $text__color;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 42px;
-    padding: 85px 0 63px 0;
-  }
-  & .btn{
-    color: $white;
-    font-size: 16px;
-    line-height: 23px;
-    letter-spacing: 0.1em;
-    padding: 10px 30px;
-    background-color: #F9B640;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.5s ease;
-    &:hover{
-      background-color: #62D0DF;
-    }
-  }
+  overflow-x:hidden;
 }
 
-.logo__img{
-  position: absolute;
-  top: 0;
-  right: 0px;
- z-index: 1;
+@import 'scss/_header';
+
+.container{
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
+
+@import 'scss/_why';
+@import 'scss/_about';
+@import 'scss/_help';
 
