@@ -16,6 +16,22 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.center {
+  padding-left: calc(50% - 565px);
+  padding-right: calc(50% - 565px);
+}
+
 header {
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #F4F9E2), color-stop(50%, white));
   background: linear-gradient(to right, #F4F9E2 50%, white 50%);
@@ -30,7 +46,7 @@ header {
   margin: 0 auto;
 }
 
-.logo {
+.container__header .logo {
   font-family: Larsseit;
   font-weight: 700;
   font-size: 24px;
@@ -39,10 +55,8 @@ header {
   color: #62D0DF;
 }
 
-.top__menu {
+.container__header .top__menu {
   padding-top: 27px;
-  padding-left: 180px;
-  width: 1130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,15 +65,16 @@ header {
           justify-content: space-between;
 }
 
-.nav {
+.container__header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
   padding-top: 10px;
+  z-index: 2;
 }
 
-.nav .nav__link {
+.container__header .nav__link {
   margin-right: 28px;
   color: #22356F;
   font-family: Larsseit;
@@ -70,12 +85,12 @@ header {
   transition: all 0.3s ease;
 }
 
-.nav .nav__link:hover {
-  padding-bottom: 1px;
+.container__header .nav__link:hover {
+  padding-bottom: 5px;
   border-bottom: 1px solid #22356F;
 }
 
-.top__btn {
+.container__header .top__btn {
   font-family: Larsseit;
   font-size: 14px;
   font-weight: bold;
@@ -91,7 +106,7 @@ header {
   z-index: 2;
 }
 
-.top__btn:hover {
+.container__header .top__btn:hover {
   background-color: #F9B640;
 }
 
@@ -102,12 +117,11 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 75px;
 }
 
 .offer {
-  padding-left: 180px;
-  padding-bottom: 75px;
-  width: 480px;
+  width: 485px;
 }
 
 .offer .logo {
@@ -153,22 +167,13 @@ header {
   margin-left: 35px;
 }
 
-.logo__img {
-  position: absolute;
-  z-index: 1;
-  right: -130px;
-  top: -74px;
-}
-
-.container {
-  width: 1440px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.offer__img {
+  background-image: url(img/MaskGroup.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  right: -280px;
+  top: -150px;
 }
 
 .why {
@@ -218,7 +223,7 @@ header {
   letter-spacing: 0.06em;
 }
 
-.about__discription {
+.about__title__discription {
   margin-right: 424px;
   font-size: 24px;
   line-height: 34px;
@@ -227,6 +232,11 @@ header {
 
 .help {
   text-align: center;
+}
+
+.help__container {
+  padding-left: calc(50% - 720px);
+  padding-right: calc(50% - 720px);
 }
 
 .help__title {
@@ -238,5 +248,48 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-size: 16px;
+}
+
+.help__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 125px;
+  list-style: none;
+}
+
+.help__item {
+  width: 360px;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+  color: #FFFFFF;
+  padding-bottom: 211px;
+}
+
+.help__item::after {
+  color: #E9B730;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+}
+
+.help__item-1 {
+  background-color: #FFE2DE;
+}
+
+.help__item-2 {
+  background-color: #C4E769;
+}
+
+.help__item-3 {
+  background-color: #62D0DF;
+}
+
+.help__item-4 {
+  background-color: #0052C1;
 }
 /*# sourceMappingURL=style.css.map */
