@@ -2,15 +2,12 @@ header
   background: linear-gradient(to right, #F4F9E2 50%, white 50%)
 
 .container__header
-  position: relative
   width: 1440px
   background: linear-gradient(to right, $title__color 76%, white 23%)
   background-size: contain
-    // padding: 30px 130px 75px 180px;
   margin: 0 auto
 
   .logo
-    font-family: $mainFont
     font-weight: 700
     font-size: 24px
     line-height: 27px
@@ -31,7 +28,6 @@ header
     &__link
       margin-right: 28px
       color: $text__color
-      font-family: $mainFont
       font-size: 14px
       line-height: 16px
       text-decoration: none
@@ -41,7 +37,6 @@ header
         border-bottom: 1px solid $text__color
 
   .top__btn
-    font-family: $mainFont
     font-size: 14px
     font-weight: bold
     line-height: 16px
@@ -97,11 +92,7 @@ header
 
   & .btn__right
     margin-left: 35px
-
-.offer__img
-  background-image: url(img/MaskGroup.png)
-  background-repeat: no-repeat
-  width: 100%
-  position: relative
-  right: -280px
-  top: -150px
+  &__img
+    position: absolute
+    right: 100px
+    top: -100px
