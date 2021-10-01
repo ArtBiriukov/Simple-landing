@@ -1,5 +1,9 @@
 header
-  background: linear-gradient(to right, #F4F9E2 50%, white 50%)
+  background: linear-gradient(to right, #F4F9E2 50%, #fff 50%)
+
+.header__center
+  padding-left: calc(50% - 565px)
+  padding-right: calc(50% - 565px)
 
 .container__header
   width: 1440px
@@ -12,7 +16,7 @@ header
     font-size: 24px
     line-height: 27px
     text-decoration: none
-    color: #62D0DF
+    color: $white__blue
 
   .top__menu
     padding-top: 27px
@@ -23,7 +27,6 @@ header
     display: flex
     list-style-type: none
     padding-top: 10px
-    z-index: 2
 
     &__link
       margin-right: 28px
@@ -31,7 +34,8 @@ header
       font-size: 14px
       line-height: 16px
       text-decoration: none
-      transition: all 0.3s ease
+      transition: all 0.3s ease-in-out
+
       &:hover
         padding-bottom: 5px
         border-bottom: 1px solid $text__color
@@ -44,12 +48,12 @@ header
     text-transform: uppercase
     text-decoration: none
     padding: 20px 30px
-    background-color: #62D0DF
+    background-color: $white__blue
     border-radius: 50px
     transition: all 0.5s ease
     z-index: 2
     &:hover
-      background-color: #F9B640
+      background-color: $yellow__color
 
 .wrapper
   display: flex
@@ -84,12 +88,12 @@ header
     line-height: 23px
     letter-spacing: 0.1em
     padding: 0.6em 1.9em
-    background-color: #F9B640
+    background-color: $yellow__color
     text-transform: uppercase
     text-decoration: none
     transition: all 0.5s ease
     &:hover
-      background-color: #62D0DF
+      background-color: $white__blue
 
   & .btn__right
     margin-left: 35px

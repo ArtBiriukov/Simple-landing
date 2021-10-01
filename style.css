@@ -28,19 +28,19 @@ body {
   display: flex;
 }
 
-.header__center {
-  padding-left: calc(50% - 565px);
-  padding-right: calc(50% - 565px);
-}
-
 .center {
   padding-left: calc(50% - 720px);
   padding-right: calc(50% - 720px);
 }
 
 header {
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #F4F9E2), color-stop(50%, white));
-  background: linear-gradient(to right, #F4F9E2 50%, white 50%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #F4F9E2), color-stop(50%, #fff));
+  background: linear-gradient(to right, #F4F9E2 50%, #fff 50%);
+}
+
+.header__center {
+  padding-left: calc(50% - 565px);
+  padding-right: calc(50% - 565px);
 }
 
 .container__header {
@@ -75,7 +75,6 @@ header {
   display: flex;
   list-style-type: none;
   padding-top: 10px;
-  z-index: 2;
 }
 
 .container__header .nav__link {
@@ -84,8 +83,8 @@ header {
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .container__header .nav__link:hover {
@@ -266,7 +265,36 @@ header {
       flex-wrap: wrap;
 }
 
-.help__items__content {
+.help__item {
+  position: relative;
+  overflow: hidden;
+  width: 360px;
+  height: 360px;
+  padding: 72px 50px 225px 53px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+.help__item-lifting {
+  background-color: #f0beb7;
+}
+
+.help__item-runSpin {
+  background-color: #C4E769;
+}
+
+.help__item-iron {
+  background-color: #62D0DF;
+}
+
+.help__item-iron2 {
+  background-color: #0052C1;
+}
+
+.help__item__content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,91 +302,35 @@ header {
   padding-top: 23px;
 }
 
-.help__items__title {
+.help__item__title {
   font-size: 32px;
   line-height: 34px;
   letter-spacing: -0.006em;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
-.help__items-1 {
-  width: 360px;
-  height: 360px;
-  padding: 72px 50px 225px 53px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #FFE2DE;
-  background-position: center;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+.help__item-img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
 }
 
-.help__items-1:hover {
-  background-image: url(img/items/Weight_Lifting.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: scale(1.03, 1.03);
-          transform: scale(1.03, 1.03);
+.help__item:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  z-index: 1;
 }
 
-.help__items-2 {
-  width: 360px;
-  height: 360px;
-  padding: 72px 50px 225px 53px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #C4E769;
-  background-position: center;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-}
-
-.help__items-2:hover {
-  background-image: url(img/items/Running__Spinning.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: scale(1.03, 1.03);
-          transform: scale(1.03, 1.03);
-}
-
-.help__items-3 {
-  width: 360px;
-  height: 360px;
-  padding: 72px 50px 225px 53px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #62D0DF;
-  background-position: center;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-}
-
-.help__items-3:hover {
-  background-image: url(img/items/Pumping_Iron1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: scale(1.03, 1.03);
-          transform: scale(1.03, 1.03);
-}
-
-.help__items-4 {
-  width: 360px;
-  height: 360px;
-  padding: 72px 50px 225px 53px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #0052C1;
-  background-position: center;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-}
-
-.help__items-4:hover {
-  background-image: url(img/items/Pumping_Iron2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: scale(1.03, 1.03);
-          transform: scale(1.03, 1.03);
+.help__item:hover .help__item-img {
+  opacity: 1;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .dot {
