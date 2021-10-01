@@ -346,21 +346,6 @@ header {
   padding-bottom: 22px;
 }
 
-.exercises__items__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-top: 1px solid #fff;
-  padding-top: 30px;
-}
-
-.exercises__items__title {
-  font-size: 32px;
-  line-height: 34px;
-  letter-spacing: -0.006em;
-  color: #FFFFFF;
-}
-
 .exercises__dot {
   width: 12px;
   height: 12px;
@@ -368,124 +353,87 @@ header {
   margin-right: 20px;
 }
 
-.exercises__items-1 {
+.exercises__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.exercises__item {
+  position: relative;
+  overflow: hidden;
   width: 480px;
   height: 480px;
-  padding: 96px 68px 320px 53px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.exercises__item-health {
   background-color: #22356F;
-  background-position: center;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
 }
 
-.exercises__items-1:hover {
-  background-image: url(img/items/Physical_Health.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: scale(1.03, 1.03);
-          transform: scale(1.03, 1.03);
-}
-
-.exercises__items-2 {
-  width: 480px;
-  height: 480px;
-  padding: 96px 68px 320px 53px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.exercises__item-mental {
   background-color: #0052C1;
-  background-position: center;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
 }
 
-.exercises__items-2:hover {
-  background-image: url(img/items/Mental_Health.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: scale(1.03, 1.03);
-          transform: scale(1.03, 1.03);
-}
-
-.exercises__items-3 {
-  width: 480px;
-  height: 480px;
-  padding: 96px 68px 320px 53px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.exercises__item-nutrition {
   background-color: #76B58B;
-  background-position: center;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
 }
 
-.exercises__items-3:hover {
-  background-image: url(img/items/Nutrition.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: scale(1.03, 1.03);
-          transform: scale(1.03, 1.03);
-}
-
-.exercises__items-4 {
-  width: 480px;
-  height: 480px;
-  padding: 96px 68px 320px 53px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.exercises__item-gymnastics {
   background-color: #62D0DF;
-  background-position: center;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
 }
 
-.exercises__items-4:hover {
-  background-image: url(img/items/Gymnastics.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: scale(1.03, 1.03);
-          transform: scale(1.03, 1.03);
-}
-
-.exercises__items-5 {
-  width: 480px;
-  height: 480px;
-  padding: 96px 68px 320px 53px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.exercises__item-crossfit {
   background-color: #DEE1FF;
-  background-position: center;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
 }
 
-.exercises__items-5:hover {
-  background-image: url(img/items/Crossfit.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: scale(1.03, 1.03);
-          transform: scale(1.03, 1.03);
-}
-
-.exercises__items-6 {
-  width: 480px;
-  height: 480px;
-  padding: 96px 68px 320px 53px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.exercises__item-aerobics {
   background-color: #8F00FF;
-  background-position: center;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
 }
 
-.exercises__items-6:hover {
-  background-image: url(img/items/Aerobics.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transform: scale(1.03, 1.03);
-          transform: scale(1.03, 1.03);
+.exercises__item-content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #fff;
+  padding-top: 30px;
+  margin-top: 96px;
+  margin-left: 53px;
+}
+
+.exercises__item-title {
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+  color: #FFF;
+}
+
+.exercises__item-img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+.exercises__item:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  z-index: 1;
+}
+
+.exercises__item:hover .exercises__item-img {
+  opacity: 1;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .care {
