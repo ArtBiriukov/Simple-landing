@@ -3,7 +3,7 @@
 ## Верстка страницки про здоровое питание и спорт ThriveTalk .
 
 ## Демо
-https://artBiryukov.github.io/ThriveTalk 
+https://artbiryukov.github.io/Simple-landing/
 
 ## Технологии
 <ul>
